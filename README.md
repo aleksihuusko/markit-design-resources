@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Markit
+
+Welcome to Markit, a comprehensive resource management application designed for designers and developers. This project provides a curated collection of tools and resources, making it easy to find and access various digital design resources.
+
+## Features
+
+- **Resource Listing**: View a list of resources categorized by type such as resources,books, tools, design systems and more.
+- **Category Filtering**: Dynamically filter resources based on categories like accessibility, typography, and more.
+- **Responsive Design**: Fully responsive web interface that adapts to different screen sizes.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them:
+
+```bash
+node.js - Download and install Node.js from https://nodejs.org/
+```
+
+````
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/aphuus/markit.git
+cd markit
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the server at `http://localhost:3000` - navigate to this URL in a web browser to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Describe how to use the application with some practical examples. Include screenshots if possible to make it easier to understand.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+Distributed under the MIT License. See `LICENSE` for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Aleksi Huusko – [LinkedIn](https://www.linkedin.com/in/aleksihuusko/) - aleksi@huusko.dev
+
+Project Link: [https://github.com/aphuus/markit](https://github.com/aphuus/markit)
+Deployment Link: [https://markit-resources.vercel.app/](https://markit-resources.vercel.app/)
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Contentful](https://www.contentful.com/)
+- [Node.js](https://nodejs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+````
