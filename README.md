@@ -20,8 +20,6 @@ What things you need to install the software and how to install them:
 node.js - Download and install Node.js from https://nodejs.org/
 ```
 
-````
-
 ### Installing
 
 A step-by-step series of examples that tell you how to get a development environment running:
