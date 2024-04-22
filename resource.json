@@ -1,0 +1,106 @@
+{
+  "name": "Resource",
+  "description": "",
+  "displayField": "title",
+  "fields": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "url",
+      "name": "URL",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "description",
+      "name": "Description",
+      "type": "Text",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "category",
+      "name": "Category",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry"
+    },
+    {
+      "id": "logo",
+      "name": "Logo",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Asset"
+    }
+  ],
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "5cab81grz8wv"
+      }
+    },
+    "id": "resource",
+    "type": "ContentType",
+    "createdAt": "2024-04-20T07:43:22.222Z",
+    "updatedAt": "2024-04-21T18:12:13.210Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "publishedVersion": 31,
+    "publishedAt": "2024-04-21T18:12:13.210Z",
+    "firstPublishedAt": "2024-04-20T07:43:22.603Z",
+    "createdBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "0NaJHmiX9O3f89jzTdjwnH"
+      }
+    },
+    "updatedBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "0NaJHmiX9O3f89jzTdjwnH"
+      }
+    },
+    "publishedCounter": 16,
+    "version": 32,
+    "publishedBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "0NaJHmiX9O3f89jzTdjwnH"
+      }
+    },
+    "urn": "crn:contentful:::content:spaces/5cab81grz8wv/environments/master/content_types/resource"
+  }
+}

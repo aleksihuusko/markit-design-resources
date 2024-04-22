@@ -1,7 +1,12 @@
-export default function Home() {
+import { getAllResources } from "@/lib/contentful";
+import Resources from "@/components/Resources";
+
+export default async function Home() {
+  const resources = await getAllResources();
+
   return (
     <main>
-      <h1>Hello world</h1>
+      <Resources resources={resources} />
     </main>
   );
 }
