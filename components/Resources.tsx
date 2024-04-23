@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import * as React from "react";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -30,13 +30,16 @@ export default function Resources({ resources }: ResourceProps) {
   const [selectedCategory, setSelectedCategory] =
     React.useState<Category | null>(null);
 
-  const filteredResources = useMemo(() => {
-    if (!selectedCategory || selectedCategory.value === "all-categories") {
-      return resources;
+  const sortedAndFilteredResources = useMemo(() => {
+    let filtered = resources;
+    if (selectedCategory && selectedCategory.value !== "all-categories") {
+      filtered = resources.filter(
+        (resource) => resource.fields.category === selectedCategory.label,
+      );
     }
-    return resources.filter(
-      (resource) => resource.fields.category === selectedCategory.label,
-    );
+    // Sort alphabetically by title
+    filtered.sort((a, b) => a.fields.title.localeCompare(b.fields.title));
+    return filtered;
   }, [resources, selectedCategory]);
 
   return (
@@ -63,14 +66,14 @@ export default function Resources({ resources }: ResourceProps) {
           </div>
         </div>
         <div className="grid grid-cols-1 items-start gap-x-6 gap-y-8 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
-          {filteredResources.map((resource) => (
+          {sortedAndFilteredResources.map((resource) => (
             <Link
               target="_blank"
               href={resource.fields.url}
               key={resource.sys.id}
               className="h-full"
             >
-              <Card className="flex h-full flex-col justify-between bg-accent/20 transition hover:border-foreground hover:bg-accent/80">
+              <Card className="flex h-full flex-col justify-between bg-accent/20 transition hover:bg-accent/80 hover:shadow-lg">
                 <CardHeader>
                   <Image
                     className="mb-4 aspect-square rounded-md object-cover"

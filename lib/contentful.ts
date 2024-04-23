@@ -12,6 +12,7 @@ export async function getAllResources() {
     const response =
       await client.withoutUnresolvableLinks.getEntries<ResourceSkeleton>({
         content_type: "resource",
+        limit: 1000,
       });
 
     return response.items;

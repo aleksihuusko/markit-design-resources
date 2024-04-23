@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Designer Resources | Markit",
+  title: "Design Resources | Markit",
   description:
     "Markit Design Resources is a design gallery showcasing the best resources, inspiration, jobs and websites for designers and developers.",
 };
