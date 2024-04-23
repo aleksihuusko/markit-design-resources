@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 
 import "@/app/globals.css";
-import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Designer Resources | Markit",
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

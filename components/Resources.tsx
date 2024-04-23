@@ -62,7 +62,7 @@ export default function Resources({ resources }: ResourceProps) {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 items-start gap-x-6 gap-y-8 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-4 lg:gap-x-8">
+        <div className="grid grid-cols-1 items-start gap-x-6 gap-y-8 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
           {filteredResources.map((resource) => (
             <Link
               target="_blank"
@@ -70,7 +70,7 @@ export default function Resources({ resources }: ResourceProps) {
               key={resource.sys.id}
               className="h-full"
             >
-              <Card className="flex h-full flex-col justify-between bg-accent/20 transition hover:bg-accent/80">
+              <Card className="flex h-full flex-col justify-between bg-accent/20 transition hover:border-foreground hover:bg-accent/80">
                 <CardHeader>
                   <Image
                     className="mb-4 rounded-md"
