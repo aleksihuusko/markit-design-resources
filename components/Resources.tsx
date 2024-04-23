@@ -58,8 +58,8 @@ export default function Resources({ resources }: ResourceProps) {
               The ultimate resource collection for designers and developers.
             </h1>
             <p className="md:text-md">
-              Discover the best resources with the library of over 300+ sites
-              and tools. Free forever.
+              Discover the best design resources for with the library of over
+              250+ sites and tools. Free forever.
             </p>
           </div>
           <div className="flex-wrap items-center justify-end md:block">
