@@ -12,6 +12,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { SubmitButton } from "./SubmitButton";
 
 export default function Footer() {
   return (
@@ -21,6 +22,7 @@ export default function Footer() {
           <div className="mb-8">
             <Logo className="h-auto w-24 text-foreground md:w-28" />
           </div>
+
           <NavigationMenu>
             <NavigationMenuList className="flex flex-col md:flex-row">
               <NavigationMenuItem>
@@ -41,13 +43,6 @@ export default function Footer() {
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Newsletter
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Submit
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

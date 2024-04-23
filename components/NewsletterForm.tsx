@@ -18,9 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
 
 const formSchema = z.object({
-  email: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
 });
 
 export default function NewsletterForm() {
@@ -33,7 +31,6 @@ export default function NewsletterForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
   }
 
@@ -51,7 +48,7 @@ export default function NewsletterForm() {
               </FormControl>
               <FormDescription className="flex flex-row items-center gap-2">
                 <Send className="w-4" />
-                No spam, just design
+                No spam, just value.
               </FormDescription>
               <FormMessage />
             </FormItem>
