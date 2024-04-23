@@ -73,7 +73,7 @@ export default function Resources({ resources }: ResourceProps) {
               <Card className="flex h-full flex-col justify-between bg-accent/20 transition hover:border-foreground hover:bg-accent/80">
                 <CardHeader>
                   <Image
-                    className="mb-4 rounded-md"
+                    className="mb-4 aspect-square rounded-md object-cover"
                     width={25}
                     height={25}
                     src={`https:${resource.fields.logo?.fields.file?.url}`}
