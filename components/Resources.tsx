@@ -32,13 +32,17 @@ export default function Resources({ resources }: ResourceProps) {
 
   const sortedAndFilteredResources = useMemo(() => {
     let filtered = resources;
+
+    // Filter by category (if selected)
     if (selectedCategory && selectedCategory.value !== "all-categories") {
       filtered = resources.filter(
         (resource) => resource.fields.category === selectedCategory.label,
       );
     }
+
     // Sort alphabetically by title
     filtered.sort((a, b) => a.fields.title.localeCompare(b.fields.title));
+
     return filtered;
   }, [resources, selectedCategory]);
 
