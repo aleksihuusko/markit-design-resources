@@ -60,15 +60,15 @@ export default function Footer() {
             © 2024 Markit | All rights reserved
           </p>
           <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-x-0 gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
-            <li className="underline decoration-black underline-offset-1">
-              <Link href="/">
+            <li className="underline underline-offset-1">
+              <Link href="/privacy-policy">
                 <Button variant="link" className="text-muted-foreground">
                   Privacy Policy
                 </Button>
               </Link>
             </li>
-            <li className="underline decoration-black underline-offset-1">
-              <Link href="/">
+            <li className="underline underline-offset-1">
+              <Link href="/terms-of-service">
                 <Button variant="link" className="text-muted-foreground">
                   Terms of Service
                 </Button>

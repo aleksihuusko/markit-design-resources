@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { SubmitButton } from "./SubmitButton";
 
 export default function Navbar() {
   return (
@@ -31,23 +32,16 @@ export default function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/sponsor" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Sponsor
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/newsletter" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Newsletter
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Submit
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -55,7 +49,7 @@ export default function Navbar() {
         </NavigationMenu>
         <div className="flex min-h-16 items-center justify-end gap-x-4">
           <ThemeToggle />
-          <Button>Submit</Button>
+          <SubmitButton />
           <button className="group -mr-2 flex size-12 flex-col items-center justify-center lg:hidden">
             <MenuIcon />
           </button>
